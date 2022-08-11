@@ -1,19 +1,18 @@
 node_modules
 *.bin
 .bin
-*.json
 favicon.ico
 index.html
 logo192.png
 robots.txt
 logo512.png
 end
-App.css
-App.js
-App.test.js
-BaseErrorBoundary.js
-index.css
-index.js
-lectures.js
-reportWebVitals.js
-setupTests.js
+# App.css
+# App.js
+# App.test.js
+# BaseErrorBoundary.js
+# index.css
+# index.js
+# lectures.js
+# reportWebVitals.js
+# setupTests.js
