@@ -8,6 +8,7 @@ const counter = createSlice({
     count: 0,
     status: ''
   },
+
   reducers: {
     add(state, { type, payload }) {
       state.count = state.count + payload;
@@ -26,14 +27,14 @@ const counter = createSlice({
     builder.addCase(addAsyncWithStatus.pending, (state) => {
       state.status = 'Loading...'
     })
-    .addCase(addAsyncWithStatus.fulfilled, (state, action) => {
-      state.status = '取得済'
-      state.count = state.count + action.payload;
-    })
-    .addCase(addAsyncWithStatus.rejected, (state) => {
-      state.status = 'エラー'
-    })
-    
+      .addCase(addAsyncWithStatus.fulfilled, (state, action) => {
+        state.status = '取得済'
+        state.count = state.count + action.payload;
+      })
+      .addCase(addAsyncWithStatus.rejected, (state) => {
+        state.status = 'エラー'
+      })
+
   }
 });
 

@@ -13,6 +13,7 @@ const reduxMiddleware = (store) => {
       // storeはaction後の状態
     };
   }
+
 }
 const Example = () => {
   return (

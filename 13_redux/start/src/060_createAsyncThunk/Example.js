@@ -8,6 +8,8 @@ const Example = () => {
       <Counter />
     </Provider>
   );
+
+
 };
 
 export default Example;
