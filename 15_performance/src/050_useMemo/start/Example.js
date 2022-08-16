@@ -8,8 +8,9 @@ const Example = () => {
 
   const clickHandler = useCallback(() => {
     setCountB(countB + 1);
-  },[countB]);
-  
+  }, [countB]);
+
+
   return (
     <div className="parent">
       <div>
@@ -28,7 +29,7 @@ const Example = () => {
       <div>
         <p>ボタンAクリック回数：{countA}</p>
       </div>
-      <Child countB={countB} onClick={clickHandler}/>
+      <Child countB={countB} onClick={clickHandler} />
     </div>
   );
 };
