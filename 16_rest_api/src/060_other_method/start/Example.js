@@ -1,4 +1,5 @@
 import Todo from "./components/Todo";
+import './api/todo'
 
 const Example = () => {
   return (
@@ -8,5 +9,6 @@ const Example = () => {
     </>
   );
 };
+
 
 export default Example;
